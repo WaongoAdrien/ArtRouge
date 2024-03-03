@@ -96,8 +96,19 @@
     </header>
         <h2 class="center">Contact and Hours</h2>
         <div class="center">
-            <img src= "https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/main2.jpeg" class="small" >
+            <img id="loginImage" src="" alt="Random Image"  class="small" >
         </div>
+        <br>
+        <script>
+            // Your JavaScript code here
+            document.addEventListener('DOMContentLoaded', function() {
+            var images = ['https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/main2.jpeg',
+                        'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.00.jpeg',
+                        'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(1).jpeg'];
+            var imageIndex = Math.floor(Math.random() * images.length);
+            document.getElementById('loginImage').src = images[imageIndex];
+            });
+        </script>
         <br>
         <br>
         <div class="center">
