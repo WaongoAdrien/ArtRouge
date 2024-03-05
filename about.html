@@ -79,6 +79,27 @@
                     font-size:18px;
                     color:white;
         }
+        .video-wrapper {
+            overflow: hidden;
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        #player {
+            position: absolute;
+            top: -50px; /* Adjust this value to hide the upper part of the video */
+            left: 0;
+            width: 100%;
+            height: calc(100% + 50px); /* Adjust this value according to the 'top' property */
+        }
+
+        .image-wrapper {
+            display: none;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -131,6 +152,12 @@
              Our commitment to quality and taste is what sets us apart from others. Come experience!
         </div>
     <br>
+    <div class="video-wrapper">
+        <div id="player"></div>
+    </div>
+        <div class="image-wrapper">
+        <img id="endImage" src="https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/logo.png" alt="Image after video">
+    </div>
     <br>
     <br>
     <br>
@@ -138,6 +165,28 @@
     <br>
     <br>
     <br>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '400',
+            width: '100%',
+            videoId: 'D_NS2e7sDV8',
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.ENDED) {
+            document.querySelector('.video-wrapper').style.display = 'none';
+            document.querySelector('.image-wrapper').style.display = 'block';
+        }
+    }
+    </script>
+    
     <footer class="font-size1">
         <p> &copy; 2024 L'Art Rouge</p>
     </footer>
