@@ -7,45 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-                background-color: black;
-                color:white;
-            }
-        .center{
+            background-color: black;
+            color: white;
+        }
+        .center {
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-        .image-container {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-        }
-        .image-container img {
-                        margin-right: 25px;
-         }
-
-        .margin{
-             margin-left: 30px;
-             font-size: 16px;
-             justify-content:center;
-             align-items: center;
-        }
-        .margin1{
-             margin-left: 5px;
-        }
-
-        .drop-shadow {
-                filter: drop-shadow(3px 6px 9px #636161);
-        }
-        .small{
-                width: 400px;
-                height: 240px;
-                border-radius:10px
-        }
-        .small2{
-                width: 470px;
-                height: 350px;
         }
         .navbar {
             font-size: 18px;
@@ -59,35 +27,25 @@
             display: flex; /* To have navbar items on the same line */
             justify-content: center; /* To center navbar items horizontally */
         }
-
-        .navbar-a {
-                    display: block;
-                    color: #fff;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
+        .navbar li {
+            margin: 0 10px; /* Adjust spacing between navbar items */
         }
-
-        .font-size{
-                    font-size:24px;
+        .navbar a {
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white; /* Make navbar item text white */
         }
-        .border1{
-                border: 2px solid #000;
-                width:300px;
-                margin-left:159px;
-
-
-        }
-        .font-size1{
-                    font-size:18px;
-                    color:white;
+        .small {
+            width: 400px;
+            height: 240px;
+            border-radius: 10px;
         }
         .video-wrapper {
             overflow: hidden;
             position: relative;
             padding-top: 56.25%; /* 16:9 Aspect Ratio */
         }
-
         #player {
             position: absolute;
             top: -50px; /* Adjust this value to hide the upper part of the video */
@@ -95,37 +53,37 @@
             width: 100%;
             height: calc(100% + 50px); /* Adjust this value according to the 'top' property */
         }
-
         .image-wrapper {
             display: none;
         }
-
         .image-wrapper img {
             width: 100%;
+        }
+        footer {
+            font-size: 9px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
         <br>
-        <!--<img src="logo.png" alt="Logo">-->
-        <hr style=" border:0;clear:both;display:block;width:100%; background-color:#cc0000; height:10px;margin: 0 auto;">
+        <hr style="border:0;clear:both;display:block;width:100%;background-color:#cc0000;height:10px;margin:0 auto;">
         <h1 class="center">L'ART ROUGE</h1>
-            <ul class="navbar">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">Infos</a></li>
-                <li><a href="contact.html">Contact/Heures</a></li>
-            </ul>
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Infos</a></li>
+            <li><a href="contact.html">Contact/Heures</a></li>
+        </ul>
     </header>
-        <h2 class="center">À propos de nous</h2>
-        <div class="center">
-            <img id="loginImage" src="" alt="..."  class="small" >
-        </div>
-        <br>
-        <script>
-            // Your JavaScript code here
-            document.addEventListener('DOMContentLoaded', function() {
+    <h2 class="center">À propos de nous</h2>
+    <div class="center">
+        <img id="loginImage" src="" alt="..." class="small">
+    </div>
+    <br>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
             var images = ['https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.02.jpeg',
                           'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/menu1.jpeg',
                           'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.01.jpeg',
@@ -139,18 +97,13 @@
                           'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(1).jpeg'];
             var imageIndex = Math.floor(Math.random() * images.length);
             document.getElementById('loginImage').src = images[imageIndex];
-            });
-        </script>
-        <br>
-        <br>
-        <div class="center">
-        </div>
-        <div class="center">
-        </div>
-        <div style="background-color:#cc0000;width:device-width; height:200px;margin: 0px auto;box-shadow: 0 4px 8px rgba(0, 0, 2, 0.1);border-radius:10px;padding: 20px;
-                font-size:18px; text-align:center;">
-            L'Art Rouge vous propose une diversité de vins importés issus de grands domaines dans plusieurs pays. Le vin est idéalement apprécié lorsqu'il est servi avec une bonne gastronomie. Notre restaurant l'art rouge vous permet de garder à la fois le gout du vin et aussi celui de votre plat.. L'Art Rouge vous propose un self grill dont le charbon sera bio et fabriqué au Burkina Faso.
-        </div>
+        });
+    </script>
+    <br>
+    <br>
+    <div style="background-color:#cc0000;width:device-width;height:200px;margin:0 auto;box-shadow:0 4px 8px rgba(0, 0, 2, 0.1);border-radius:10px;padding:20px;font-size:18px;text-align:center;">
+        L'Art Rouge vous propose une diversité de vins importés issus de grands domaines dans plusieurs pays. Le vin est idéalement apprécié lorsqu'il est servi avec une bonne gastronomie. Notre restaurant l'art rouge vous permet de garder à la fois le gout du vin et aussi celui de votre plat.. L'Art Rouge vous propose un self grill dont le charbon sera bio et fabriqué au Burkina Faso.
+    </div>
     <br>
     <br>
     <div class="video-wrapper">
@@ -165,31 +118,31 @@
     <br>
     <br>
     <br>
-    <br> 
+    <br>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            height: '0',
-            width: '100%',
-            videoId: 'SgE4KORXjJU',
-            events: {
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
-
-    function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-            document.querySelector('.video-wrapper').style.display = 'none';
-            document.querySelector('.image-wrapper').style.display = 'block';
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '0',
+                width: '100%',
+                videoId: 'SgE4KORXjJU',
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
         }
-    }
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.ENDED) {
+                document.querySelector('.video-wrapper').style.display = 'none';
+                document.querySelector('.image-wrapper').style.display = 'block';
+            }
+        }
     </script>
-    
-    <footer font-size:9px;>
-        <p> &copy; 2024 L'Art Rouge</p>
+
+    <footer>
+        <p>&copy; 2024 L'Art Rouge</p>
     </footer>
 </body>
 </html>
