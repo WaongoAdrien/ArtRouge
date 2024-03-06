@@ -48,26 +48,26 @@
         .small2{
                 width: 470px;
                 height: 350px;
-        }
         .navbar {
-                font-size: 24px;
-                border-radius:10px;
-                color:white;
-                display: flex;
-                justify-content: center;
-                list-style-type: none;
-                margin: 0;
-                padding: 0px;
-                overflow: hidden;
-                background-color:#cc0000;
+            font-size: 18px;
+            border-radius: 10px;
+            color: white;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #cc0000;
+            display: flex; /* To have navbar items on the same line */
+            justify-content: center; /* To center navbar items horizontally */
         }
-
-        .navbar-a {
-                    display: block;
-                    color: #fff;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
+        .navbar li {
+            margin: 5 10px; /* Adjust spacing between navbar items */
+        }
+        .navbar a {
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white; /* Make navbar item text white */
         }
 
         .font-size{
@@ -97,6 +97,10 @@
             width: 300px; /* Set the width */
             cursor: pointer; /* Cursor changes to a hand icon */
         }
+        footer {
+            font-size: 9px;
+            text-align: center;
+        }
 
     </style>
 </head>
@@ -106,12 +110,12 @@
         <!--<img src="logo.png" alt="Logo">-->
         <hr style=" border:0;clear:both;display:block;width:100%; background-color:#cc0000; height:10px;margin: 0 auto;">
         <h1 class="center">L'ART ROUGE</h1>
-            <ul class="navbar">
-                <li class="margin"><a href="index.html"> <h3 class="font-size1">Accueil</h3></a></li>
-                <li class="margin"><a href="menu.html"><h3 class="font-size1">Menu</h3></a></li>
-                <li class="margin"><a href="about.html"><h3 class="font-size1">Infos</h3></a></li>
-                <li class="margin"><a href="contact.html"><h3 class="font-size1">Contact/Heures</h3></a></li>
-            </ul>
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Infos</a></li>
+            <li><a href="contact.html">Contact/Heures</a></li>
+        </ul>
     </header>
         <h2 class="center">Bienvenue à L'ART ROUGE</h2>
     
@@ -145,8 +149,8 @@
     <br>
     <br>
 
-    <footer font-size:10px;>
-        <p> &copy; 2024 L'Art Rouge</p>
+    <footer>
+        <p>&copy; 2024 L'Art Rouge</p>
     </footer>
 </body>
 </html>
