@@ -89,24 +89,29 @@
                 height: 330px;
         }
         .navbar {
-                font-size: 24px;
-                border-radius:10px;
-                display: flex;
-                justify-content: center;
-                list-style-type: none;
-                margin: 0;
-                padding: 0px;
-                background-color: white;
-                overflow: hidden;
-                background-color:#cc0000;
+            font-size: 18px;
+            border-radius: 10px;
+            color: white;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #cc0000;
+            display: flex; /* To have navbar items on the same line */
+            justify-content: center; /* To center navbar items horizontally */
         }
-
-        .navbar-a {
-                    display: block;
-                    color: #fff;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
+        .navbar li {
+            margin: 5 10px; /* Adjust spacing between navbar items */
+        }
+        .navbar a {
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white; /* Make navbar item text white */
+        }
+        footer {
+            font-size: 9px;
+            text-align: center;
         }
 
         .font-size{
@@ -131,12 +136,12 @@
         <!--<img src="logo.png" alt="Logo">-->
         <hr style=" border:0;clear:both;display:block;width:100%; background-color:#cc0000; height:10px;margin: 0 auto;">
         <h1 class="center">L'ART ROUGE</h1>
-            <ul class="navbar">
-                <li class="margin"><a href="index.html"> <h3 class="font-size1">Accueil</h3></a></li>
-                <li class="margin"><a href="menu.html"><h3 class="font-size1">Menu</h3></a></li>
-                <li class="margin"><a href="about.html"><h3 class="font-size1">About Us</h3></a></li>
-                <li class="margin"><a href="contact.html"><h3 class="font-size1">Contact/Hours</h3></a></li>
-            </ul>
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Infos</a></li>
+            <li><a href="contact.html">Contact/Heures</a></li>
+        </ul>
     </header>
     <h2 class="center1">NOS PIZZAS</h2>
 <div class="menu">
@@ -162,7 +167,7 @@
     <div class="menu-item">Frite surprise <span class="price">4000F</span><br><span class="description">frite de pomme de terre, sauce cheddar, lardon, fromage, herbes fraîches</span></div>
 </div>
     <div class="menu-item"><a href="menu.html"><h3 class="font-size1">MENU PRINCIPAL</h3></a></div>
-    <div class="menu-item"><a href="index.html"><h3 class="font-size1">HOME</h3></a></div>
+    <div class="menu-item"><a href="index.html"><h3 class="font-size1">ACCUEIL</h3></a></div>
     <br>
     <br>
     <br>
@@ -171,6 +176,9 @@
     <br>
     <br>
     <br>
+    <footer>
+        <p>&copy; 2024 L'Art Rouge</p>
+    </footer>
 
 </body>
 </html>
