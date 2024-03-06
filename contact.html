@@ -41,15 +41,19 @@
             border-radius: 10px;
         }
         .navbar {
-            font-size: 24px;
+            font-size: 18px;
             border-radius: 10px;
-            display: flex;
-            justify-content: center;
+            color: white;
             list-style-type: none;
             margin: 0;
-            padding: 0px;
-            background-color: #cc0000;
+            padding: 0;
             overflow: hidden;
+            background-color: #cc0000;
+            display: flex; /* To have navbar items on the same line */
+            justify-content: center; /* To center navbar items horizontally */
+        }
+        .navbar li {
+            margin: 5 10px; /* Adjust spacing between navbar items */
         }
         .navbar-a {
             display: block;
@@ -70,6 +74,10 @@
             font-size: 18px;
             color: white;
         }
+        footer {
+            font-size: 9px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -78,10 +86,10 @@
         <hr style="border:0;clear:both;display:block;width:100%;background-color:#cc0000;height:10px;margin:0 auto;">
         <h1 class="center">L'ART ROUGE</h1>
         <ul class="navbar">
-            <li class="margin"><a href="index.html"><h3 class="font-size1">Accueil</h3></a></li>
-            <li class="margin"><a href="menu.html"><h3 class="font-size1">Menu</h3></a></li>
-            <li class="margin"><a href="about.html"><h3 class="font-size1">Infos</h3></a></li>
-            <li class="margin"><a href="contact.html"><h3 class="font-size1">Contact/Heures</h3></a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Infos</a></li>
+            <li><a href="contact.html">Contact/Heures</a></li>
         </ul>
     </header>
     <h2 class="center">Contact et Nos Heures</h2>
@@ -126,5 +134,8 @@
     <br>
     <br>
     <br>
+    <footer>
+        <p>&copy; 2024 L'Art Rouge</p>
+    </footer>
 </body>
 </html>
