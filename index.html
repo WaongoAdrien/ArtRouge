@@ -15,6 +15,13 @@
          align-items: center;
          justify-content: center;
          }
+         .center-clock {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size:18px;
+         font-weight: bold;
+         }
          .image-container {
          display: flex;
          justify-content: center;
@@ -121,7 +128,7 @@
       <div class="center">
          <img src="https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/logo.png" class="small" >
       </div>
-      <p class="center" id="status"></p>
+      <p class="center-clock" id="status"></p>
       <div style="background-color:#cc0000;width:device-width;height:170px;margin:0 auto;box-shadow:0 4px 8px rgba(0, 0, 2, 0.1);border-radius:10px;padding:20px;font-size:18px;text-align:center;">
          Le restaurant "L'Art Rouge", situé à ouaga 2000, est un cadre idéal pour vos diners et discussions d'affaire. Nous vous proposons un self grill tous les week-ends du vendredi à dimanche et avons un menu très varié en symbiose entre la boisson qui vous permettra de passer de très bons moments entre famille, collègues et amis.
       </div>
@@ -158,7 +165,7 @@
     } else {
       // Check if the time is between 16:00 and 23:59
       if (hours >= 16 && hours < 24) {
-        document.getElementById("status").textContent = "Ouvert";
+        document.getElementById("status").textContent = "Ouvert! Fermons a Minuit";
         document.getElementById("status").style.color = "green";
       } else {
         document.getElementById("status").textContent = "Fermés! Ouvert á 16H00";
