@@ -1,138 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Art Rouge</title>
-    <link rel="stylesheet" href="styles.css"> 
-    <style>
-        body {
-            background-color: black;
-            color: white;
-        }
-        .center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .image-container img {
-            margin-right: 25px;
-        }
-        .margin {
-            margin-left: 30px;
-            font-size: 16px;
-            justify-content: center;
-            display: flex;
-        }
-        .margin1 {
-            margin-left: 5px;
-        }
-        .drop-shadow {
-            filter: drop-shadow(3px 6px 9px #636161);
-        }
-        .small {
-            width: 350px;
-            height: 210px;
-            border-radius: 10px;
-        }
-        .small2 {
-            width: 470px;
-            height: 350px;
-        }
-        .navbar {
-            font-size: 18px;
-            border-radius: 10px;
-            color: white;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #cc0000;
-            display: flex;
-            justify-content: center;
-        }
-        .navbar li {
-            margin: 5 10px;
-        }
-        .navbar a {
-            display: block;
-            padding: 14px 16px;
-            text-decoration: none;
-            color: white;
-        }
-        .font-size {
-            font-size: 24px;
-        }
-        .font-size1 {
-            font-size: 18px;
-            color: white;
-        }
-        .border1 {
-            border: 2px solid #000;
-            width: 300px;
-            margin-left: 159px;
-        }
-        .button {
-            background-color: DodgerBlue;
-            border-radius: 10px;
-            color: white;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            width: 300px;
-            cursor: pointer;
-        }
-        footer {
-            font-size: 9px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <br>
-        <hr style="border:0;clear:both;display:block;width:100%;background-color:#cc0000;height:10px;margin:0 auto;">
-        <h1 class="center">L'ART ROUGE</h1>
-        <ul class="navbar">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>L'Art Rouge</title>
+      <link rel="stylesheet" href="styles.css">
+      <style>
+         body {
+         background-color: black;
+         color: white;
+         }
+         .center {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         }
+         .image-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         .image-container img {
+         margin-right: 25px;
+         }
+         .margin {
+         margin-left: 30px;
+         font-size: 16px;
+         justify-content: center;
+         display: flex;
+         }
+         .margin1 {
+         margin-left: 5px;
+         }
+         .drop-shadow {
+         filter: drop-shadow(3px 6px 9px #636161);
+         }
+         .small {
+         width: 350px;
+         height: 210px;
+         border-radius: 10px;
+         }
+         .small2 {
+         width: 470px;
+         height: 350px;
+         }
+         .navbar {
+         font-size: 18px;
+         border-radius: 10px;
+         color: white;
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #cc0000;
+         display: flex;
+         justify-content: center;
+         }
+         .navbar li {
+         margin: 5 10px;
+         }
+         .navbar a {
+         display: block;
+         padding: 14px 16px;
+         text-decoration: none;
+         color: white;
+         }
+         .font-size {
+         font-size: 24px;
+         }
+         .font-size1 {
+         font-size: 18px;
+         color: white;
+         }
+         .border1 {
+         border: 2px solid #000;
+         width: 300px;
+         margin-left: 159px;
+         }
+         .button {
+         background-color: DodgerBlue;
+         border-radius: 10px;
+         color: white;
+         padding: 5px 10px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         width: 300px;
+         cursor: pointer;
+         }
+         footer {
+         font-size: 9px;
+         text-align: center;
+         }
+         #clock {
+         font-size: 0px;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <br>
+         <hr style="border:0;clear:both;display:block;width:100%;background-color:#cc0000;height:10px;margin:0 auto;">
+         <h1 class="center">L'ART ROUGE</h1>
+         <ul class="navbar">
             <li><a href="index.html" class="navbar-a">Accueil</a></li>
             <li><a href="menu.html" class="navbar-a">Menu</a></li>
             <li><a href="about.html" class="navbar-a">Infos</a></li>
             <li><a href="contact.html" class="navbar-a">Contact/Heures</a></li>
-        </ul>
-    </header>
-    <h2 class="center">Bienvenue à L'ART ROUGE</h2>
-    <h3 class="margin1 font-size center">Goûtez la différence !</h3>
-    <div class="center">
-        <a href="https://www.google.com/maps/place/L'Art+rouge+restaurant+et+cave+%C3%A0+vin/@12.3085164,-1.4973101,17z/data=!3m1!4b1!4m6!3m5!1s0xe2ebf0a1aaebdf9:0xb2bebe7e2f1fe633!8m2!3d12.3085164!4d-1.4973101!16s%2Fg%2F11svmw_j13?entry=ttu" class="button">
-            Géolocalisation clicker ici!
-        </a>
-    </div>
-    <br>
-    <div class="center">
-        <img src="https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/logo.png" class="small" >
-    </div>
-    <br>
-    <br>
-    <div style="background-color:#cc0000;width:device-width;height:170px;margin:0 auto;box-shadow:0 4px 8px rgba(0, 0, 2, 0.1);border-radius:10px;padding:20px;font-size:18px;text-align:center;">
-        Le restaurant "L'Art Rouge", situé à ouaga 2000, est un cadre idéal pour vos diners et discussions d'affaire. Nous vous proposons un self grill tous les week-ends du vendredi à dimanche et avons un menu très varié en symbiose entre la boisson qui vous permettra de passer de très bons moments entre famille, collègues et amis.
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer>
-        <p>&copy; 2024 L'Art Rouge</p>
-    </footer>
-</body>
+         </ul>
+      </header>
+      <h2 class="center">Bienvenue à L'ART ROUGE</h2>
+      <h3 class="margin1 font-size center">Goûtez la différence !</h3>
+      <div class="center">
+         <a href="https://www.google.com/maps/place/L'Art+rouge+restaurant+et+cave+%C3%A0+vin/@12.3085164,-1.4973101,17z/data=!3m1!4b1!4m6!3m5!1s0xe2ebf0a1aaebdf9:0xb2bebe7e2f1fe633!8m2!3d12.3085164!4d-1.4973101!16s%2Fg%2F11svmw_j13?entry=ttu" class="button">
+         Géolocalisation clicker ici!
+         </a>
+      </div>
+      <br>
+      <div class="center">
+         <img src="https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/logo.png" class="small" >
+      </div>
+      <p class="center" id="status"></p>
+      <div style="background-color:#cc0000;width:device-width;height:170px;margin:0 auto;box-shadow:0 4px 8px rgba(0, 0, 2, 0.1);border-radius:10px;padding:20px;font-size:18px;text-align:center;">
+         Le restaurant "L'Art Rouge", situé à ouaga 2000, est un cadre idéal pour vos diners et discussions d'affaire. Nous vous proposons un self grill tous les week-ends du vendredi à dimanche et avons un menu très varié en symbiose entre la boisson qui vous permettra de passer de très bons moments entre famille, collègues et amis.
+      </div>
+
+      <br>
+      <br>
+      <p class="center"><span id="clock"></span></p>
+      <script>
+         function displayTime() {
+           var currentTime = new Date();
+           var hours = currentTime.getHours();
+           var minutes = currentTime.getMinutes();
+           var seconds = currentTime.getSeconds();
+           var dayOfWeek = currentTime.getDay(); // 0 is Sunday, 1 is Monday, etc.
+
+           // Add leading zeros if the values are less than 10
+           hours = (hours < 10 ? "0" : "") + hours;
+           minutes = (minutes < 10 ? "0" : "") + minutes;
+           seconds = (seconds < 10 ? "0" : "") + seconds;
+
+           // Choose between 12-hour and 24-hour format as per requirement
+           var timeFormat = "12"; // Change to "24" for 24-hour format
+
+           // Display time in 12-hour or 24-hour format
+           var timeString = (timeFormat === "12") ? (hours + ":" + minutes + ":" + seconds + " " + (hours < 12 ? "AM" : "PM")) : (hours + ":" + minutes + ":" + seconds);
+
+           // Update the HTML element with the current time
+           document.getElementById("clock").innerHTML = timeString;
+
+           // Check if it's Monday and display "Closed All Day"
+           if (dayOfWeek === 1) {
+             document.getElementById("status").textContent = "Fermés les Lundis";
+             document.getElementById("status").style.color = "red";
+           } else {
+             // Check if the time is between 16:00 and 23:59
+             if (hours >= 16 && hours < 24) {
+               document.getElementById("status").textContent = "Ouvert";
+               document.getElementById("status").style.color = "green";
+             } else {
+               document.getElementById("status").textContent = "Fermés! Ouvert á 16H00";
+               document.getElementById("status").style.color = "red";
+             }
+           }
+         }
+
+         // Call displayTime() function to initially display the time and status
+         displayTime();
+
+         // Update the time every second
+         setInterval(displayTime, 1000);
+      </script>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <footer>
+         <p>&copy; 2024 L'Art Rouge</p>
+      </footer>
+   </body>
 </html>
