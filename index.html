@@ -129,50 +129,51 @@
       <br>
       <br>
       <p class="center"><span id="clock"></span></p>
-      <script>
-         function displayTime() {
-           var currentTime = new Date();
-           var hours = currentTime.getHours();
-           var minutes = currentTime.getMinutes();
-           var seconds = currentTime.getSeconds();
-           var dayOfWeek = currentTime.getDay(); // 0 is Sunday, 1 is Monday, etc.
+<script>
+    function displayTime() {
+    var currentTime = new Date();
+    var hours = currentTime.getUTCHours();
+    var minutes = currentTime.getUTCMinutes();
+    var seconds = currentTime.getUTCSeconds();
+    var dayOfWeek = currentTime.getUTCDay(); // 0 is Sunday, 1 is Monday, etc.
 
-           // Add leading zeros if the values are less than 10
-           hours = (hours < 10 ? "0" : "") + hours;
-           minutes = (minutes < 10 ? "0" : "") + minutes;
-           seconds = (seconds < 10 ? "0" : "") + seconds;
+    // Add leading zeros if the values are less than 10
+    hours = (hours < 10 ? "0" : "") + hours;
+    minutes = (minutes < 10 ? "0" : "") + minutes;
+    seconds = (seconds < 10 ? "0" : "") + seconds;
 
-           // Choose between 12-hour and 24-hour format as per requirement
-           var timeFormat = "12"; // Change to "24" for 24-hour format
+    // Choose between 12-hour and 24-hour format as per requirement
+    var timeFormat = "12"; // Change to "24" for 24-hour format
 
-           // Display time in 12-hour or 24-hour format
-           var timeString = (timeFormat === "12") ? (hours + ":" + minutes + ":" + seconds + " " + (hours < 12 ? "AM" : "PM")) : (hours + ":" + minutes + ":" + seconds);
+    // Display time in 12-hour or 24-hour format
+    var timeString = (timeFormat === "12") ? (hours + ":" + minutes + ":" + seconds + " " + (hours < 12 ? "AM" : "PM")) : (hours + ":" + minutes + ":" + seconds);
 
-           // Update the HTML element with the current time
-           document.getElementById("clock").innerHTML = timeString;
+    // Update the HTML element with the current time
+    document.getElementById("clock").innerHTML = timeString;
 
-           // Check if it's Monday and display "Closed All Day"
-           if (dayOfWeek === 1) {
-             document.getElementById("status").textContent = "Fermés les Lundis";
-             document.getElementById("status").style.color = "red";
-           } else {
-             // Check if the time is between 16:00 and 23:59
-             if (hours >= 16 && hours < 24) {
-               document.getElementById("status").textContent = "Ouvert";
-               document.getElementById("status").style.color = "green";
-             } else {
-               document.getElementById("status").textContent = "Fermés! Ouvert á 16H00";
-               document.getElementById("status").style.color = "red";
-             }
-           }
-         }
+    // Check if it's Monday and display "Closed All Day"
+    if (dayOfWeek === 1) {
+      document.getElementById("status").textContent = "Fermés les Lundis";
+      document.getElementById("status").style.color = "red";
+    } else {
+      // Check if the time is between 16:00 and 23:59
+      if (hours >= 16 && hours < 24) {
+        document.getElementById("status").textContent = "Ouvert";
+        document.getElementById("status").style.color = "green";
+      } else {
+        document.getElementById("status").textContent = "Fermés! Ouvert á 16H00";
+        document.getElementById("status").style.color = "red";
+      }
+    }
+  }
 
-         // Call displayTime() function to initially display the time and status
-         displayTime();
+  // Call displayTime() function to initially display the time and status
+  displayTime();
 
-         // Update the time every second
-         setInterval(displayTime, 1000);
-      </script>
+  // Update the time every second
+  setInterval(displayTime, 1000);
+</script>
+
       <br>
       <br>
       <br>
