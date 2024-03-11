@@ -160,7 +160,7 @@
 
         // Check if it's Monday and display "Closed All Day"
         if (dayOfWeek === 1) {
-            document.getElementById("status").textContent = "Fermés les Lundis";
+            document.getElementById("status").textContent = "Fermés aujourd'hui lundi";
             document.getElementById("status").style.color = "red";
         } else {
             // Check if the time is between 15:00 and 16:00
@@ -168,7 +168,7 @@
                 document.getElementById("status").textContent = "Nous ouvrons bientôt: 16H00";
                 document.getElementById("status").style.color = "yellow";
             } else if (hours >= 16 && hours < 24) {
-                document.getElementById("status").textContent = "Ouvert! Nous fermons à Minuit";
+                document.getElementById("status").textContent = "Ouvert! Jusqu'à Minuit";
                 document.getElementById("status").style.color = "green";
             } else {
                 document.getElementById("status").textContent = "Fermés! Nous ouvrons à 16H00";
