@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Art Rouge</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .menu {
+            background-color: #cc0000;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu h2 {
+            color: white;
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #930000;
+            padding: 10px 0;
+            color: white;
+        }
+
+        .menu-note {
+            border-bottom: 1px solid #930000;
+            padding: 10px 0;
+            color: yellow;
+        }
+
+        .menu-item:last-child {
+            border: none;
+        }
+
+        .price {
+            float: right;
+            color: white;
+        }
+
+        .description {
+            font-style: italic;
+            color: #ffe5e5;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            margin-right: 25px;
+        }
+
+        .margin {
+            margin-left: 30px;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .margin1 {
+            margin-left: 5px;
+        }
+
+        .drop-shadow {
+            filter: drop-shadow(3px 6px 9px #636161);
+        }
+
+        .small {
+            width: 300px;
+            height: 255px;
+            border-radius: 10px;
+        }
+
+        .small2 {
+            width: 470px;
+            height: 330px;
+        }
+
+        .navbar {
+            font-size: 18px;
+            border-radius: 10px;
+            color: white;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #cc0000;
+            display: flex; /* To have navbar items on the same line */
+            justify-content: center; /* To center navbar items horizontally */
+        }
+
+        .navbar li {
+            margin: 5 10px;
+        }
+
+        .navbar a {
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .font-size {
+            font-size: 24px;
+        }
+
+        .border1 {
+            border: 2px solid #000;
+            width: 300px;
+            margin-left: 159px;
+        }
+
+        .font-size1 {
+            font-size: 18px;
+            color: white;
+        }
+        footer {
+            font-size: 9px;
+            text-align: center;
+        }
+
+        a {
+            color: white; /* Change to your desired color */
+          }
+
+        a:visited {
+            color: white; /* Or any other color */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <br>
+    <hr style=" border:0;clear:both;display:block;width:100%; background-color:#cc0000; height:10px;margin: 0 auto;">
+    <h1 class="center">L'ART ROUGE</h1>
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Infos</a></li>
+            <li><a href="contact.html">Contact/Heures</a></li>
+        </ul>
+</header>
+
+
+<!-- New Menu Section for Drinks -->
+<h2 class="center1">Nos Boissons alcoolisées</h2>
+<h2 class="center1">Nos Bieres</h2>
+
+<div class="menu">
+    <!-- Menu items for Boissons alcoolisées -->
+    <div class="menu-item">Hennekein <span class="price">2,000F</span></div>
+    <div class="menu-item">Beaufort 33 cl <span class="price">1,500F</span></div>
+    <div class="menu-item">Doople 50cl <span class="price">1,500F</span></div>
+    <div class="menu-item">Guiness 33cl <span class="price">2,000F</span></div>
+    <div class="menu-item">Tequila <span class="price">1,000F</span></div>
+    <div class="menu-item">Castel 33 cl <span class="price">2,000F</span></div>
+    <div class="menu-item">Desperado <span class="price">2,500F</span></div>
+</div>
+
+<h2 class="center1">Nos Whiskys</h2>
+<div class="menu">
+    <!-- Menu items for Whiskys -->
+    <div class="menu-item">Henneys very special <span class="price">5,000F</span></div>
+    <div class="menu-item">Glendfiddich <span class="price">5,000F</span></div>
+    <div class
+
+="menu-item">Glenvinet <span class="price">4,000F</span></div>
+    <div class="menu-item">Diplomatico 12 ans <span class="price">5,000F</span></div>
+    <div class="menu-item">Martini <span class="price">2,000F</span></div>
+    <div class="menu-item">Remy Martin <span class="price">6,000F</span></div>
+    <div class="menu-item">Jameson <span class="price">3,000F</span></div>
+    <div class="menu-item">Jonhnie Blonde <span class="price">3,000F</span></div>
+    <div class="menu-item">Ricard <span class="price">2,000F</span></div>
+    <div class="menu-item">Jack Daniels <span class="price">5,000F</span></div>
+    <div class="menu-item">Grant's <span class="price">2,000F</span></div>
+</div>
+
+<h2 class="center1">Nos Boissons Energisantes</h2>
+<div class="menu">
+    <div class="menu-item">Red Bull <span class="price">2,000F</span></div>
+    <div class="menu-item">Doppel malt energy <span class="price">2,000F</span></div>
+</div>
+
+<h2 class="center1">Nos boissons Non Alcoolisées</h2>
+<div class="menu">
+    <div class="menu-item">Sucreries <span class="price">1,200F</span></div>
+    <div class="menu-item">Eau Laafi 1,5l <span class="price">1,500F</span></div>
+    <div class="menu-item">Eau gazeuse <span class="price">1,000F</span></div>
+    <div class="menu-item">Mangue orange <span class="price">1,500F</span></div>
+    <div class="menu-item">Jus bravo (Raisin ou melon) <span class="price">2,500F</span></div>
+</div>
+
+<h2 class="center1">Nos Cocktails Non Alcoolisés</h2>
+<div class="menu">
+    <div class="menu-item">Sunrise  <span class="price">3,500F</span>
+        <br><span class="description">(jus d'ananas, jus d'orange, sirop de grénadine)</span></div>
+
+    <div class="menu-item">Ve-Mojito  <span class="price">3,500F</span>
+    <br><span class="description">(Feuille de menthe, Tranche de citron, jus de citron, Sprite)</span></div>
+    <div class="menu-item">Mojito Fraise <span class="price">3,500F</span>
+    <br><span class="description">(Feuille de menthe, tranche de citron, sirop de fraise, Sprite)</span></div>
+    <div class="menu-item">Pina-Colada  <span class="price">4,000F</span>
+    <br><span class="description">(lait de coco, lait frais, Sirop de canne, Jus d'ananas)</span></div>
+    <div class="menu-item">Bora Bora <span class="price">3,500F</span>
+    <br><span class="description">(Jus d'ananas, Jus de la passion, jus de citron, Sirop de grénadine)</span></div>
+    <div class="menu-item">Rose Bonbon  <span class="price">4,000F</span>
+    <br><span class="description">(Lait de coco, lait frais, sirop de canne, jus d'ananas, sirop de fraise)</span></div>
+</div>
+
+<h2 class="center1">Nos Cocktails Alcoolisés</h2>
+<div class="menu">
+    <div class="menu-item">L'Art Rouge  <span class="price">6,000</span>
+    <br><span class="description">(rhum blanc, rhume brun, jus de citron, jus d'ananas, liqueur de pèche, sirop de grénadine)</span></div>
+
+    <div class="menu-item">Mojito <span class="price">5,000</span>
+    <br><span class="description">(feuille de menthe, Tranche de citron, Sucre de canne, jus de citron, Rhum blanc, eau gazeuse)</span></div>
+
+    <div class="menu-item">Pinkly  <span class="price">5,000F</span>
+    <br><span class="description">(Vodka, cointreau, malibu, jus d'ananas, sirop de grénadine)</span></div>
+
+    <div class="menu-item">Le Roman  <span class="price">5,500F</span>
+    <br><span class="description">(Rhum blanc, jus de citron, cointreau, sirop de d'orgeat, jus d'ananas, rhum brun)</span></div>
+
+    <div class="menu-item">Le mutang <span class="price">5,500F</span>
+    <br><span class="description">( tequila, cointreau, jus de citron, jus d'ananas, sirop de pèche)</span></div>
+</div>
+
+<h2 class="center1">Nos Boissons Chaude</h2>
+<div class="menu">
+    <div class="menu-item">Nepresso<span class="price">1,000</span></div>
+</div>
+
+<h2 class="center1">Nos Cigares</h2>
+<div class="menu">
+    <div class="menu-item">Montecristo AJ Fernandez Toro<span class="price">15,000</span></div>
+    <div class="menu-item">Factory Prenium<span class="price">12,000</span></div>
+    <div class="menu-item">Baccaray<span class="price">10,000</span></div>
+</div>
+
+<h4 class="center"><a href="menu2.html">NOS SANDWICHS & PIZZA ICI!</a></h4>
+<h4 class="center"><a href="index.html">RETOUR A L'ACCUEIL</a></h4>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <p>&copy; 2024 L'Art Rouge</p>
+</footer>
+</body>
+</html>
+
