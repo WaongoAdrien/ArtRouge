@@ -5,67 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Art Rouge</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: black; 
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        .center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .navbar {
-            font-size: 18px;
-            border-radius: 10px;
-            color: white;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #cc0000;
-            display: flex; /* To have navbar items on the same line */
-            justify-content: center; /* To center navbar items horizontally */
-        }
-        .navbar li {
-            margin: 5 10px; /* Adjust spacing between navbar items */
-        }
-        .navbar a {
-            display: block;
-            padding: 14px 16px;
-            text-decoration: none;
-            color: white; /* Make navbar item text white */
-        }
-        .small {
-            width: 400px;
-            height: 240px;
-            border-radius: 10px;
-        }
-        .video-wrapper {
-            overflow: hidden;
-            position: relative;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-        }
-        #player {
-            position: absolute;
-            top: -50px; /* Adjust this value to hide the upper part of the video */
-            left: 0;
-            width: 100%;
-            height: calc(100% + 50px); /* Adjust this value according to the 'top' property */
-        }
-        .image-wrapper {
-            display: none;
-        }
-        .image-wrapper img {
-            width: 100%;
-        }
-        footer {
-            font-size: 9px;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -86,17 +25,19 @@
     <br>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var images = ['https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.02.jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/menu1.jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.01.jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.02%20(1).jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(2).jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.08.jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/picuter1.png',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/main.jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(1).jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.00.jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(1).jpeg'];
+            var images = [
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.02.jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/menu1.jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.01.jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.02%20(1).jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(2).jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.08.jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/picuter1.png',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/main.jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(1).jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.00.jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(1).jpeg'
+            ];
             var imageIndex = Math.floor(Math.random() * images.length);
             document.getElementById('loginImage').src = images[imageIndex];
         });
