@@ -5,232 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Art Rouge</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: black;
-            color: white;
-        }
-
-        .menu {
-            background-color: #cc0000;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .menu h2 {
-            color: white;
-            text-align: center;
-            margin: 0 0 20px 0;
-        }
-
-        .menu-item {
-            border-bottom: 1px solid #930000;
-            padding: 10px 0;
-            color: white;
-        }
-
-        .menu-note {
-            border-bottom: 1px solid #930000;
-            padding: 10px 0;
-            color: yellow;
-        }
-
-        .menu-item:last-child {
-            border: none;
-        }
-
-        .price {
-            float: right;
-            color: white;
-        }
-
-        .description {
-            font-style: italic;
-            color: #ffe5e5;
-        }
-
-        .center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .center1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .image-container img {
-            margin-right: 25px;
-        }
-
-        .margin {
-            margin-left: 30px;
-            font-size: 16px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .margin1 {
-            margin-left: 5px;
-        }
-
-        .drop-shadow {
-            filter: drop-shadow(3px 6px 9px #636161);
-        }
-
-        .small {
-            width: 300px;
-            height: 255px;
-            border-radius: 10px;
-        }
-
-        .small2 {
-            width: 470px;
-            height: 330px;
-        }
-
-        .navbar {
-            font-size: 18px;
-            border-radius: 10px;
-            color: white;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #cc0000;
-            display: flex; /* To have navbar items on the same line */
-            justify-content: center; /* To center navbar items horizontally */
-        }
-
-        .navbar li {
-            margin: 5 10px;
-        }
-
-        .navbar a {
-            display: block;
-            padding: 14px 16px;
-            text-decoration: none;
-            color: white;
-        }
-
-        .font-size {
-            font-size: 24px;
-        }
-
-        .border1 {
-            border: 2px solid #000;
-            width: 300px;
-            margin-left: 159px;
-        }
-
-        .font-size1 {
-            font-size: 18px;
-            color: white;
-        }
-        footer {
-            font-size: 9px;
-            text-align: center;
-        }
-
-        a {
-            color: white; /* Change to your desired color */
-          }
-
-        a:visited {
-            color: white; /* Or any other color */
-        }
-    </style>
 </head>
 <body>
 <header>
     <br>
-    <hr style=" border:0;clear:both;display:block;width:100%; background-color:#cc0000; height:10px;margin: 0 auto;">
+    <hr class="red-divider">
     <h1 class="center">L'ART ROUGE</h1>
-        <ul class="navbar">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">Infos</a></li>
-            <li><a href="contact.html">Contact/Heures</a></li>
-        </ul>
+    <ul class="navbar">
+        <li><a href="index.html" class="navbar-a">Accueil</a></li>
+        <li><a href="menu.html" class="navbar-a">Menu</a></li>
+        <li><a href="about.html" class="navbar-a">Infos</a></li>
+        <li><a href="contact.html" class="navbar-a">Contact/Heures</a></li>
+    </ul>
 </header>
-<div class="menu"><a href="boissons.html"><div class="center">Nos Boissons et Cigares!</div></a></div>
+<div class="menu">
+    <a href="boissons.html">
+        <div class="center">Nos Boissons et Cigares!</div>
+    </a>
+</div>
 <h1 class="center1">Nos Bouchées et Tapas</h1>
 <div class="menu">
-    <div class="menu-item">Brochettes de crevettes caramélisées <span class="price">5 000F</span><br><span class="description">au parfum d'orange</span></div>
+    <div class="menu-item">Brochettes de crevettes caramélisées <span class="price">5 000F</span><br>
+        <span class="description">au parfum d'orange</span>
+    </div>
     <div class="menu-item">Fromage <span class="price">2 500F</span></div>
     <div class="menu-item">Nems aux crevettes <span class="price">5 000F</span></div>
-    <div class="menu-item">Nems aux poulet <span class="price">4 000F</span></div>
-    <div class="menu-item">Nems aux b&#156;uf <span class="price">4 000F</span></div>
+    <div class="menu-item">Nems au poulet <span class="price">4 000F</span></div>
+    <div class="menu-item">Nems au bœuf <span class="price">4 000F</span></div>
     <div class="menu-item">Tempura de légumes <span class="price">3 000F</span></div>
 </div>
 <h2 class="center1">Nos Entrées Froides</h2>
 <div class="menu">
-    <div class="menu-item">Salade fraîcheur <span class="price">4 000F</span><br><span class="description">(laitue, tomate, carotte, haricot vert, concombre, pomme de terre, olives, oignon)</span></div>
-    <div class="menu-item">Salade de foies de volaille <span class="price">5 000F</span><br><span class="description">(Salade verte, foie de volaille poêlées, tomates)</span></div>
-    <div class="menu-item">Salade au saumon fumé <span class="price">8 000F</span><br><span class="description">(Salade verte, saumon fumé, toast beurre à l'ail)</span></div>
-    <div class="menu-item">Salade chicken cheese <span class="price">6 000F</span><br><span class="description">(Salade verte, crouton de pain, parmesan, tomate, blanc de poulet)</span></div>
-    <div class="menu-item">Rouleaux de printemps <span class="price">5 000F</span><br><span class="description">(Crevettes, salade, carotte, concombre, poivron, sauce soja)</span></div>
-    <div class="menu-item">Salade l'Art Rouge <span class="price">6 500F</span><br><span class="description">(Laitue, tomate, concombre, carotte, maïs doux, jambon bœuf ou porc, blanc de poulet grillées, cornichons, oeufs)</span></div>
-    <div class="menu-item">Salade du chef <span class="price">6 000F</span><br><span class="description">(laitue, tomate, carotte, oignon, mais doux, concombre, crevettes décortiquées, feuilles de menthe)</span></div>
-    <div class="menu-item">Assiette de charcuterie <span class="price">7 500F</span><br><span class="description">(jambon, chorizo, salami, fromage, cornichons)</span></div>
+    <div class="menu-item">Salade fraîcheur <span class="price">4 000F</span><br>
+        <span class="description">(laitue, tomate, carotte, haricot vert, concombre, pomme de terre, olives, oignon)</span>
+    </div>
+    <div class="menu-item">Salade de foies de volaille <span class="price">5 000F</span><br>
+        <span class="description">(Salade verte, foie de volaille poêlées, tomates)</span>
+    </div>
+    <div class="menu-item">Salade au saumon fumé <span class="price">8 000F</span><br>
+        <span class="description">(Salade verte, saumon fumé, toast beurre à l'ail)</span>
+    </div>
+    <div class="menu-item">Salade chicken cheese <span class="price">6 000F</span><br>
+        <span class="description">(Salade verte, crouton de pain, parmesan, tomate, blanc de poulet)</span>
+    </div>
+    <div class="menu-item">Rouleaux de printemps <span class="price">5 000F</span><br>
+        <span class="description">(Crevettes, salade, carotte, concombre, poivron, sauce soja)</span>
+    </div>
+    <div class="menu-item">Salade l'Art Rouge <span class="price">6 500F</span><br>
+        <span class="description">(Laitue, tomate, concombre, carotte, maïs doux, jambon bœuf ou porc, blanc de poulet grillées, cornichons, œufs)</span>
+    </div>
+    <div class="menu-item">Salade du chef <span class="price">6 000F</span><br>
+        <span class="description">(laitue, tomate, carotte, oignon, maïs doux, concombre, crevettes décortiquées, feuilles de menthe)</span>
+    </div>
+    <div class="menu-item">Assiette de charcuterie <span class="price">7 500F</span><br>
+        <span class="description">(jambon, chorizo, salami, fromage, cornichons)</span>
+    </div>
 </div>
 <h1 class="center1">Nos Viandes</h1>
 <div class="menu">
-    <div class="menu-item">Le bœuf bourguignon <span class="price">8 000F</span><br><span class="description">(Viande de bœuf braisée au vin rouge, échalotte, champignons et lardons)</span></div>
-    <div class="menu-item">L'Art Rouge premium steak <span class="price">8 000F</span><br><span class="description">(Carré de bœuf mariné et grillé à la perfection servi avec une réduction de jus de veau)</span></div>
-    <div class="menu-item">Gigot d'agneau de 7h <span class="price">9 000F</span><br><span class="description">(Servi avec sa réduction de fond de veau au vin blanc, échalotes et tomate)</span></div>
-    <div class="menu-item">Côte de porc grillée <span class="price">7 000F</span><br><span class="description">(paprika, curry, sauce spéciale)</span></div>
+    <div class="menu-item">Le bœuf bourguignon <span class="price">8 000F</span><br>
+        <span class="description">(Viande de bœuf braisée au vin rouge, échalote, champignons et lardons)</span>
+    </div>
+    <div class="menu-item">L'Art Rouge premium steak <span class="price">8 000F</span><br>
+        <span class="description">(Carré de bœuf mariné et grillé à la perfection servi avec une réduction de jus de veau)</span>
+    </div>
+    <div class="menu-item">Gigot d'agneau de 7h <span class="price">9 000F</span><br>
+        <span class="description">(Servi avec sa réduction de fond de veau au vin blanc, échalotes et tomate)</span>
+    </div>
+    <div class="menu-item">Côte de porc grillée <span class="price">7 000F</span><br>
+        <span class="description">(paprika, curry, sauce spéciale)</span>
+    </div>
     <div class="menu-item">Poulet grillé <span class="price">7 500F</span></div>
     <div class="menu-item">Brochette de filet de bœuf <span class="price">7 000F</span></div>
     <div class="menu-item">Côte de bœuf sauce béarnaise <span class="price">8 500F</span></div>
     <div class="menu-item">Ailes de poulet japonais <span class="price">6 000F</span></div>
     <div class="menu-item">Brochettes de poulet<span class="price">7 000F</span></div>
-    <div class="menu-item">Filet de bœuf grillé <span class="price">9 500F</span><br><span class="description">(Sauce Poivre vert/crème aux champignons/Roquefort)</span></div>
+    <div class="menu-item">Filet de bœuf grillé <span class="price">9 500F</span><br>
+        <span class="description">(Sauce Poivre vert/crème aux champignons/Roquefort)</span>
+    </div>
     <div class="menu-item">Sauce supplément <span class="price">2 000F</span></div>
-
-</div>
-<h2 class="center1">Nos Poissons et Crustacés</h2>
-<div class="menu">
-    <div class="menu-item">Pavé de capitaine <span class="price">9 500F</span><br><span class="description">(Sauce teriyaki/sauce crème aux champignons)</span></div>
-    <div class="menu-item">Brochette de capitaine <span class="price">8 000F</span></div>
-    <div class="menu-item">Suprême royal de gambas au caraïbe crémeux <span class="price">16 500F</span></div>
-    <div class="menu-item">Gambas grillées <span class="price">15 000F</span><br><span class="description">(Ail, persil, sauce américaine)</span></div>
-    <div class="menu-item">Carpe braisée <span class="price">7 000F</span></div>
-    <div class="menu-item">Mix grill de la mer <span class="price">20 000F</span><br><span class="description">(Gambas, capitaine, calamar)</span></div>
-    <div class="menu-item">Saumon grillé à l'unilatéral <span class="price">15 000F</span><br><span class="description">(Beurre citron à l'orange)</span></div>
-    <div class="menu-item">Crevettes sautées à l'ail et au persil<span class="price">8 500F</span></div>
-    <div class="menu-item">Calamars grillés jus à l'ail et au citron  <span class="price">8 000F</span></div>
-    <div class="menu-item">Sauce supplément <span class="price">2 000F</span></div>
-</div>
-<h1 class="center1">Nos Pâtes</h1>
-<div class="menu">
-    <div class="menu-item">Pennes au poulet sauce pesto <span class="price">5 000F</span></div>
-    <div class="menu-item">La carbonara <span class="price">5 500F</span><br><span class="description">(spaghetti à la vraie sauce onctueuse lardon, parmesan, ail et herbes fraîches)</span></div>
-    <div class="menu-item">Tagliatelles aux crevettes sauce crémeuse <span class="price">7 000F</span></div>
-</div>
-<h1 class="center1">Nos Garnitures</h1>
-<div class="menu">
-    <div class="menu-item">Légumes sautés</div>
-    <div class="menu-item">Pomme dauphine</div>
-    <div class="menu-item">Frites de pomme de terre</div>
-    <div class="menu-item">Alloco, Riz & Attiéké</div>
-    <div class="menu-item">Purée de pomme de terre</div>
-    <div class="menu-item">Pommes paille</div>
-    <div class="menu-item">Pommes sautées</div>
-    <div class="menu-item">Gratin dauphinois</div>
-    <div class="menu-item">Légumes sautés</div>
-    <div class="menu-note">Garniture supplément <span class="price">1 500F</span></div>
 </div>
 <h2 class="center1">Nos Desserts</h2>
 <div class="menu">
@@ -240,28 +93,12 @@
     <div class="menu-item">Fondant au chocolat <span class="price">3 500F</span></div>
     <div class="menu-item">Thé-infusion <span class="price">1 000F</span></div>
     <div class="menu-item">Café Nespresso <span class="price">1 000F</span></div>
-
 </div>
-<h1 class="center1">Nos Self Grill</h1>
-<div class="menu">
-    <div class="menu-item">COFFRET ROSE <span class="price">25 000F</span><br><span class="description">5 merguez, 4 brochettes de filet de bœuf, 2 côtes de porc ou 2 côtes de veau, 2 saucisses de Toulouse, 1garniture</span></div>
-    <div class="menu-item">COFFRET TULIPE <span class="price">30 000F</span><br><span class="description">5 merguez, 2 côtes de porc ou côtes de veau, 2 saucisses de Toulouse, 2 brochettes de filet de bœuf, 2 brochettes de capitaine, 1 poulet, 1 garniture</span></div>
-    <div class="menu-item">COFFRET ORCHIDÉE <span class="price">40 000F</span><br><span class="description">1 gigot d'agneau, 3 échines de porc ou 3 côtes de veau, 2 saucisses de Toulouse, 2 pavés de filet de bœuf, 1 poulet, 2 brochettes de capitaine, 2 garnitures</span></div>
-    <div class="menu-item">COFFRET NENUPHAR <span class="price">45 000F</span><br><span class="description">Capitaine ou dorade entier, 2 brochettes de gambas, 4 brochettes de calamar, 2 brochettes de filet de capitaine</span></div>
-    <div class="menu-item">COFFRET SPÉCIAL SUR DEVIS<br><span class="description">After work +10 personnes (Une réservation est nécessaire 72h à l'avance) Sur Devis</span><span class="price">Sur devis</span></div>
-</div>
-
-    <h4 class="center"><a href="menu2.html">NOS SANDWICHS & PIZZA ICI!</a></h4>
-    <h4 class="center"><a href="index.html">RETOUR A L'ACCUEIL</a></h4>
+<h4 class="center"><a href="menu2.html">NOS SANDWICHS & PIZZA ICI!</a></h4>
+<h4 class="center"><a href="index.html">RETOUR A L'ACCUEIL</a></h4>
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
- <footer>
+<footer>
     <p>&copy; 2024 L'Art Rouge</p>
 </footer>
 </body>
