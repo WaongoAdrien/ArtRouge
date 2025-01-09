@@ -5,85 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Art Rouge</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: black;
-            color: white;
-        }
-        .center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .image-container img {
-            margin-right: 25px;
-        }
-        .margin {
-            margin-left: 30px;
-            font-size: 16px;
-            justify-content: center;
-            display: flex;
-        }
-        .margin1 {
-            margin-left: 5px;
-        }
-        .drop-shadow {
-            filter: drop-shadow(3px 6px 9px #636161);
-        }
-        .small {
-            width: 400px;
-            height: 255px;
-            border-radius: 10px;
-        }
-        .navbar {
-            font-size: 18px;
-            border-radius: 10px;
-            color: white;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #cc0000;
-            display: flex; /* To have navbar items on the same line */
-            justify-content: center; /* To center navbar items horizontally */
-        }
-        .navbar li {
-            margin: 5 10px; /* Adjust spacing between navbar items */
-        }
-        .navbar-a {
-            display: block;
-            color: white; /* Changed color to white */
-            text-align: center;
-            padding: 14px 16px; /* Adjusted padding */
-            text-decoration: none;
-        }
-        .font-size {
-            font-size: 24px;
-        }
-        .border1 {
-            border: 2px solid #000;
-            width: 300px;
-            margin-left: 159px;
-        }
-        .font-size1 {
-            font-size: 18px;
-            color: white;
-        }
-        footer {
-            font-size: 9px;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header>
         <br>
-        <hr style="border:0;clear:both;display:block;width:100%;background-color:#cc0000;height:10px;margin:0 auto;">
+        <hr class="red-divider">
         <h1 class="center">L'ART ROUGE</h1>
         <ul class="navbar">
             <li><a href="index.html" class="navbar-a">Accueil</a></li>
@@ -98,41 +24,33 @@
     </div>
     <br>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var images = ['https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/main2.jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.02%20(1).jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(2).jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.08.jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.00.jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/main.jpeg',
-                          'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(1).jpeg'];
+        document.addEventListener('DOMContentLoaded', function () {
+            var images = [
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/main2.jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.02%20(1).jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(2).jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.08.jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.00.jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/main.jpeg',
+                'https://raw.githubusercontent.com/WaongoAdrien/ArtRouge1/main/WhatsApp%20Image%202024-01-14%20at%2021.35.06%20(1).jpeg'
+            ];
             var imageIndex = Math.floor(Math.random() * images.length);
             document.getElementById('loginImage').src = images[imageIndex];
         });
     </script>
     <br>
-    <br>
-    <div style="background-color:#cc0000;width:device-width;height:400px;margin:0 auto;box-shadow:0 4px 8px rgba(0, 0, 2, 0.1);border-radius:10px;padding:20px;font-size:18px;text-align:center;color:white">
+    <div class="contact-container">
         <h3 class="center">Contactez Nous</h3>
-        <p><strong>Email:</strong> <a href="mailto:lart_rouge@outlook.com" style="color:white">lart_rouge@outlook.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+22605864646" style="color:white">+226 05 86 46 46</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=%2B22605864646&app=facebook&entry_point=page_cta&fbclid=IwAR2RhpKCNpEoy24uNstBRDwTSS6JUn2nfN8txtKG_IvHg6-Db_-pFwDdsAs
-" style="color:white">L'Art Rouge</a></p>
-        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100091808035895" style="color:white">L'Art Rouge</a></p>
+        <p><strong>Email:</strong> <a href="mailto:lart_rouge@outlook.com">lart_rouge@outlook.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+22605864646">+226 05 86 46 46</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=%2B22605864646">L'Art Rouge</a></p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100091808035895">L'Art Rouge</a></p>
 
         <h3 class="center">Heures d'ouvertures</h3>
         <p>Mardi au Dimanche de 16h00 - 24h00</p>
-        <p><strong>Nous somme fermés Lundi </strong></p>
-        <p><strong>Retrouvez nous sur Maps:
-        </strong> <a href="https://www.google.com/maps/place/L'Art+rouge+restaurant+et+cave+%C3%A0+vin/@12.3085164,-1.4973101,17z/data=!3m1!4b1!4m6!3m5!1s0xe2ebf0a1aaebdf9:0xb2bebe7e2f1fe633!8m2!3d12.3085164!4d-1.4973101!16s%2Fg%2F11svmw_j13?entry=ttu" style="color:white">L'Art Rouge</a></p>
+        <p><strong>Nous sommes fermés Lundi</strong></p>
+        <p><strong>Retrouvez nous sur Maps:</strong> <a href="https://www.google.com/maps/place/L'Art+rouge+restaurant+et+cave+%C3%A0+vin/">L'Art Rouge</a></p>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <footer>
         <p>&copy; 2024 L'Art Rouge</p>
