@@ -7,28 +7,32 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3{
     text-align: center;
-    color: white;
+    /*1st Change from white to black and separated h4*/
+    color: black;
     margin: 20px 0;
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 p {
     margin: 10px 0;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
-/* Navbar */
+/* Navbar  added backgound color from #cc0000 to  white */
 .navbar {
     font-size: 18px;
     border-radius: 10px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #cc0000;
+    background-color: white;
     display: flex;
     justify-content: center;
+   
 }
 
 .navbar li {
@@ -48,17 +52,17 @@ p {
     background-color: #930000;
 }
 
-/* Divider */
+/* Divider change back color from #cc0000 to white*/
 .red-divider {
     border: 0;
     height: 10px;
-    background-color: #cc0000;
+    background-color: white;
     margin: 0;
 }
 
-/* Menu Section */
+/* Menu Section same with background from #cc0000 to white*/
 .menu {
-    background-color: #cc0000;
+    background-color: white;
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
@@ -74,11 +78,14 @@ p {
 .menu-item {
     border-bottom: 1px solid #930000;
     padding: 10px 0;
-    color: white;
+    /* colr added black*/
+    color: black;
 }
 
+/* colr added black*/
 .menu-item:last-child {
     border: none;
+    color : black;
 }
 
 .menu-note {
@@ -87,14 +94,16 @@ p {
     color: yellow;
 }
 
+/* price color to black */
 .price {
     float: right;
-    color: white;
+    color: black;
 }
 
+/* price color from #ffe5e5 to black */
 .description {
     font-style: italic;
-    color: #ffe5e5;
+    color: black;
 }
 
 /* Image Styling */
@@ -144,9 +153,9 @@ p {
     width: 100%;
 }
 
-/* Contact Section */
+/* Contact Section change cont-color from  #cc0000 to white */
 .contact-container {
-    background-color: #cc0000;
+    background-color: white;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
@@ -156,6 +165,7 @@ p {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* color chnaged */
 .contact-container p,
 .contact-container a {
     margin: 5px 0;
@@ -186,26 +196,39 @@ button:hover,
     background-color: #0056b3;
 }
 
-/* Footer */
+/* Footer added color white*/
 footer {
     font-size: 9px;
     text-align: center;
     margin: 20px 0;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
-/* Utility Classes */
+/* Utility Classes color white added*/
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
+/* color white added*/
 .center1 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    color: white;
+}
+
+/* center addded just for contact page head color white added*/
+.center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
 }
 
 .margin {
@@ -236,13 +259,14 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Highlights */
+/* Highlights color was #ffffff */
 h1, h2, h3 {
-    color: #ffffff;
+    color: black;
 }
 
+/* Highlights color was #cccccc */
 h4 {
-    color: #cccccc;
+    color: white;
     font-size: 16px;
     margin-top: 10px;
 }
@@ -258,4 +282,5 @@ h4 {
 #clock {
     font-size: 18px;
     color: white;
+    color: white
 }
