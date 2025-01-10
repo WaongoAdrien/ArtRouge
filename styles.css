@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 h1, h2, h3{
@@ -24,6 +25,7 @@ p {
 
 /* Navbar  added backgound color from #cc0000 to  white */
 .navbar {
+    font-weight: bold;
     font-size: 18px;
     border-radius: 10px;
     list-style-type: none;
@@ -41,6 +43,7 @@ p {
 
 /* to blck*/
 .navbar a {
+    font-weight: bold;
     display: block;
     color: black;
     text-decoration: none;
@@ -63,6 +66,7 @@ p {
 
 /* Menu Section same with background from #cc0000 to white*/
 .menu {
+    font-weight: bold;
     background-color: white;
     padding: 20px;
     margin: 20px 0;
@@ -74,6 +78,7 @@ p {
 .menu h2 {
     color: white;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .menu-item {
